@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+
+	<title>Green Screen Timer</title>
+	<style>
+	.stopwatch {
+		padding: 5px;
+		margin: 5px;
+	}
+	.stopwatch span {
+		font-size:150px;
+		text-align: left;
+		position: absolute;
+		padding-left: 5%;
+		bottom: 0;
+		left: 0;	
+		color: white;
+	}
+	.stopwatch a {
+		padding-right: 5px;
+		text-decoration: none;
+		color: #00ff00;
+	}
+	.container{
+		height:100% ;
+	}
+	#countDown{
+		width: 50%;
+		height: 40%;
+		color: white;
+		margin-left: 20%;
+		margin-top: 20%;
+		font-size: 30px;
+	}
+	html,body{
+		height: 100%;
+		background-color: #00ff00 ;
+	}
+	</style>
+</head>
+<body>
+	<div class= "container">
+		<div id="countDown"> </div>
+		<div class="stopwatch" id="b-timer"></div>
+	</div>
+</body>
+<script type="text/javascript" src="Stopwatch.js"></script>
+</html>
