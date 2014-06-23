@@ -1,4 +1,5 @@
-WorkoutPlan
-============
+=======
+playground
+==========
 
-A simple web app to tell me what my workout of the day is
+A collection of little web pages I make with various technology
