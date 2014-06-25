@@ -1,38 +1,24 @@
+<html ng-app="app" lang="en">
+<head >
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="logic.js"></script>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
-  <link rel="stylesheet" type="text/css" href="css/site.css">
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/data.js"></script>
-  <script type="text/javascript" src="js/logic.js"></script>
-  <title></title>
+	<title></title>
 </head>
 <body>
+	<div class="container" ng-controller="SitesController">
+		<h1>Di's playground </h1>
 
-  <div class="background">
-      <div class="greeting bubble">
-        <p> Hi Di, </p> 
-        <p class="message">This is your workout for the day</p>
-      </div>
-
-      <div class="title1" id="focus1">
-      </div>
-
-      <div class ="content" id="content1">
-      </div>
-
-      <div class="title1" id="focus2">
-      </div>
-      
-      <div class ="content" id="content2">
-      </div>
-
-    </div>
-  </div>
+		<div data-ng-repeat="site in sites">
+			<a data-ng-href="{{site.link}}">{{site.name}}</a>
+		</div>
+	</div>
 
 </body>
 </html>

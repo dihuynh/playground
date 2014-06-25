@@ -7,22 +7,28 @@
   <meta content="utf-8" http-equiv="encoding">
   <title>Di's to buy list</title>
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/site.css">
+  <link rel="stylesheet" type="text/css" href="site.css">
 
   <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
   <script type="text/javascript" src="../js/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
-  <script type="text/javascript" src="../js/jquery.mixitup.js"></script>
-  <script type="text/javascript" src="../js/logic.js"></script>
+  <script type="text/javascript" src="jquery.mixitup.js"></script>
+  <script type="text/javascript" src="masonry.pkgd.js"></script>
+  <script type="text/javascript" src="imagesloaded.pkgd.js"></script>
+  <script type="text/javascript" src="logic.js"></script>
+
 </head>
 
 <body>
   <div class="container">
     <div class="header">
-      <h3> Di's to buy list <span style="text-align:right">Info</span> </h3>
+      <h3 > 
+        Di's to buy list 
+        <a id="pop" rel="popover" data-placement="bottom" data-container="body" data-content="made with AngularJS & MixItUp" class="info"> about this site</a> 
+      </h3>
       <p> feel free to buy any of these items for her</p>
     </div>
-    <div ng-controller="DrawingsController">
+    <div  ng-controller="ItemsController">
       <div class="controls">
         <button class="btn btn-default filter" data-filter="all">all</button>
         <button class="btn btn-default filter" data-filter=".category-{{type}}" ng-repeat="type in types">{{type}}</button>
@@ -32,11 +38,10 @@
       <div class="test">
         <div id="showing" class="mixContainer">
           <div class="row">
-
-            <div class="mix category-{{drawing.type}}" data-myorder="{{drawing.price}}" ng-repeat="drawing in drawings">
-              <a ng-href="{{drawing.link}}">{{drawing.name}}
-                <img class="thumbnail" ng-src="{{drawing.img}}">
-                <div class="price"> {{drawing.price | currency}}</div>
+            <div class="mix category-{{item.type}}" data-myorder="{{item.price}}" ng-repeat="item in items">
+              <a ng-href="{{item.link}}">{{item.name}}
+                <img class="thumbnail" ng-src="{{item.img}}">
+                <div class="price"> {{item.price | currency}}</div>
               </a>
             </div>
           </div>
@@ -47,7 +52,7 @@
 
   <div id="footer">
     <div class="container">
-      <p class="text-muted">&copy; 2014 by <a href="http://dihuynh.github.io"> Di Huynh</a></p>
+      <p class="text-muted">&copy; 2014 by <a href="http://dihuynh.github.io"> Di Huynh</a>  and her dream of becoming a one-woman band software developer</p>
     </div>
   </div>
 
