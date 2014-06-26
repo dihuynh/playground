@@ -140,3 +140,9 @@ label {
 .popover-title {
   display:none;
 }
+
+
+.true{
+  opacity: .5 !important;
+  text-decoration: line-through !important;
+}

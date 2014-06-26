@@ -24,7 +24,7 @@
     <div class="header">
       <h3 > 
         Di's to buy list 
-        <a id="pop" rel="popover" data-placement="bottom" data-container="body" data-content="made with AngularJS & MixItUp" class="info"> about this site</a> 
+        <a id="pop" rel="popover" data-placement="bottom" data-container="body" data-content="made with love, AngularJS & MixItUp" class="info"> about this site</a> 
       </h3>
       <p> feel free to buy any of these items for her</p>
     </div>
@@ -38,7 +38,7 @@
       <div class="test">
         <div id="showing" class="mixContainer">
           <div class="row">
-            <div class="mix category-{{item.type}}" data-myorder="{{item.price}}" ng-repeat="item in items">
+            <div class="mix {{item.bought}} category-{{item.type}} " data-myorder="{{item.price}}" ng-repeat="item in items">
               <a ng-href="{{item.link}}">{{item.name}}
                 <img class="thumbnail" ng-src="{{item.img}}">
                 <div class="price"> {{item.price | currency}}</div>

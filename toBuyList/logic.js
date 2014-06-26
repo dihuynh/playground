@@ -3,7 +3,7 @@ var app = angular.module('app', []);
 app.controller('ItemsController',
 
   function ItemsController($scope) {
-    $scope.types = ['office', 'music'];
+    $scope.types = ['office', 'music', 'apartment'];
 
     $scope.items = [{
       name: 'Microsoft Natural Ergonomic Keyboard 4000',
@@ -11,14 +11,14 @@ app.controller('ItemsController',
       link: 'http://www.amazon.com/Microsoft-Natural-Ergonomic-Keyboard-4000/dp/B000A6PPOK/ref=zg_bs_12879431_7',
       type: 'office',
       img: 'images/keyboard.jpeg',
-      bought: false
+      bought: true
     }, {
-      name: 'Evoluent Vertical Mouse 4 Small',
-      price: 89.95,
-      link: 'http://www.amazon.com/VerticalMouse-Small-Mouse-Laser-Wired/dp/B004GXZ69W',
+      name: 'Anker Vertical Mouse',
+      price: 23.99,
+      link: 'http://www.amazon.com/Wireless-Vertical-Ergonomic-Optical-1600DPI/dp/B00BIFNTMC/ref=sr_1_3?s=electronics&ie=UTF8&qid=1403757794&sr=1-3&keywords=anker+mouse',
       type: 'office',
       img: 'images/mouse.jpeg',
-      bought: false
+      bought: true
     }, {
       name: 'Audio-Technica ATH-M30 Headphones',
       price: 42.40,
@@ -52,19 +52,38 @@ app.controller('ItemsController',
       price: 109.99,
       link: 'http://smile.amazon.com/Meinl-Percussion-Headliner-Series-Natural/dp/B000B6FADU/ref=sr_1_1?s=musical-instruments&ie=UTF8&qid=1403585724&sr=1-1',
       img:'images/cajon.jpg',
-      type:'music',
-      bought:false
+      type: 'music',
+      bought: false
+    },{
+      name: 'Couch',
+      price: 75,
+      link: 'https://www.facebook.com/photo.php?fbid=10203956043162887&set=gm.594238644026792&type=1&theater',
+      img: 'images/couch2.jpg',
+      type: 'apartment',
+      bought: true
+    },{
+      name: 'Couch',
+      price: 75,
+      link: 'https://www.facebook.com/photo.php?fbid=10203956043882905&set=gm.594238644026792&type=1&permPage=1',
+      img: 'images/couch.jpg',
+      type: 'apartment',
+      bought: true
     },{
       name: 'Kitchen Aid Mixer',
-      price:239.00,
+      price: 239.00,
       link: 'http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=kitchen+aid&rh=i%3Aaps%2Ck%3Akitchen+aid',
       img: 'images/mixer.jpg',
-      type: 'kitchen',
-      bought:false
+      type: 'apartment',
+      bought: false
+    }, {
+      name: 'Bed',
+      price: 100,
+      link: 'https://www.facebook.com/groups/236642739786386/permalink/589561421161181/',
+      img: 'images/bed.jpg',
+      type: 'apartment',
+      bought: true
     } 
     ];
-
-
   });
 
 $(function () {
