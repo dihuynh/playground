@@ -82,7 +82,42 @@ app.controller('ItemsController',
       img: 'images/bed.jpg',
       type: 'apartment',
       bought: true
-    } 
+    },{
+      name: 'Standing desk mat',
+      price: 53.99,
+      link: 'http://www.amazon.com/Imprint-Comfort-Nantucket-20-Inch-Cinnamon/dp/B003BYRDK2/ref=sr_1_2?ie=UTF8&qid=1403827393&sr=8-2&keywords=standing+desk+mat',
+      img: 'images/mat.jpg',
+      type: 'office',
+      bought: false
+    }, {
+      name: 'Yeti microphone',
+      price: 99.93,
+      link: 'http://www.amazon.com/Blue-Microphones-Yeti-USB-Microphone/dp/B002VA464S/ref=zg_bs_8882492011_1',
+      type: 'music',
+      img: 'images/yeti.jpg',
+      bought: false
+    }, {
+      name: 'Mic stand',
+      price: 24.95,
+      link: 'http://www.amazon.com/Stage-Stands-MS7701B-Tripod-Microphone/dp/B000978D58/ref=sr_1_1?s=musical-instruments&ie=UTF8&qid=1404067723&sr=1-1&keywords=mic+stand',
+      type: 'music',
+      img: 'images/micstand.jpg',
+      bought: false
+    }, {
+      name: 'Pop filter', 
+      price: 31.22, 
+      link: 'http://www.amazon.com/Nady-MPF-6-6-Inch-Microphone-Filter/dp/B0002CZW0Y/ref=pd_bxgy_MI_text_y',
+      type: 'music',
+      img: 'images/popfilter.jpg',
+      bought: false
+    }, {
+      name: 'Microphone',
+      price: 10.31,
+      link: 'http://www.amazon.com/Pyle-Pro-PDMIC58-Professional-Handheld-Microphone/dp/B003GEBGA0/ref=zg_bs_8882491011_2',
+      img: 'images/mic.jpg',
+      type: 'music',
+      bought: false
+    }
     ];
   });
 
