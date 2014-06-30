@@ -17,8 +17,11 @@ body, html{
 
 a {
   color:black;
+  font-size: 15px;
 }
 
 a:hover {
   text-decoration: none;
 }
+
+
