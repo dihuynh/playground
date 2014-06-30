@@ -1,4 +1,4 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['wu.masonry']);
 
 app.controller('ItemsController',
 
@@ -54,13 +54,6 @@ app.controller('ItemsController',
       img:'images/cajon.jpg',
       type: 'music',
       bought: false
-    },{
-      name: 'Couch',
-      price: 75,
-      link: 'https://www.facebook.com/photo.php?fbid=10203956043162887&set=gm.594238644026792&type=1&theater',
-      img: 'images/couch2.jpg',
-      type: 'apartment',
-      bought: true
     },{
       name: 'Couch',
       price: 75,
@@ -122,18 +115,15 @@ app.controller('ItemsController',
   });
 
 $(function () {
-  $('#showing').mixItUp();
+  $('#showing').mixItUp({
+     animation: {
+      animateResizeContainer: false,
+      effects: 'fade rotateX(-45deg) translateY(-10%)'
+    }
+  });
 });
 
-$(function ()  
-  { $("#pop").popover();  
+$(function () { 
+  $("#pop").popover();  
 });  
 
-// $(function(){
-//   var container = $('.row').masonry();
-//   // layout Masonry again after all images have loaded
-//   container.imagesLoaded( function() {
-//    container.masonry();
-//   });
-
-//});

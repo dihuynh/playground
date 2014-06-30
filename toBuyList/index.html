@@ -9,14 +9,6 @@
   <link rel="stylesheet" type="text/css" href="../shared/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="site.css">
 
-  <script type="text/javascript" src="../shared/js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="../shared/js/bootstrap.js"></script>
-  <script type="text/javascript" src="../shared/js/angular.min.js"></script>
-  <script type="text/javascript" src="jquery.mixitup.js"></script>
-  <script type="text/javascript" src="masonry.pkgd.js"></script>
-  <script type="text/javascript" src="imagesloaded.pkgd.js"></script>
-  <script type="text/javascript" src="logic.js"></script>
-
 </head>
 
 <body>
@@ -26,7 +18,10 @@
         Di's to buy list 
         <a id="pop" rel="popover" data-placement="bottom" data-container="body" data-content="made with love, AngularJS & MixItUp" class="info"> about this site</a> 
       </h3>
-      <p> feel free to buy any of these items for her</p>
+      <div>
+        <p> feel free to buy any of these items for her</p>
+        <div class="totalAmount"> Total: <span id="amount"> $34,000</span></div>
+      </div>
     </div>
     <div  ng-controller="ItemsController">
       <div class="controls">
@@ -38,7 +33,7 @@
       <div class="test">
         <div id="showing" class="mixContainer">
           <div class="row">
-            <div class="mix {{item.bought}} category-{{item.type}} " data-myorder="{{item.price}}" ng-repeat="item in items">
+            <div class="mix {{item.bought}} category-{{item.type}}" data-myorder="{{item.price}}" ng-repeat="item in items">
               <a ng-href="{{item.link}}">{{item.name}}
                 <img class="thumbnail" ng-src="{{item.img}}">
                 <div class="price"> {{item.price | currency}}</div>
@@ -57,4 +52,10 @@
   </div>
 
 </body>
+  <script type="text/javascript" src="../shared/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="../shared/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../shared/js/angular.min.js"></script>
+  <script type="text/javascript" src="jquery.mixitup.js"></script>
+  <script type="text/javascript" src="angular-masonry.js"></script>
+  <script type="text/javascript" src="logic.js"></script>
 </html>
