@@ -110,6 +110,13 @@ app.controller('ItemsController',
       img: 'images/mic.jpg',
       type: 'music',
       bought: false
+    }, {
+      name: 'Hogwarts lego set',
+      price: 369.90,
+      link: 'http://www.amazon.com/LEGO-Harry-Potter-Hogwarts-Castle/dp/B003H9NBTI',
+      img: 'images/hogwart.jpg',
+      type: 'random',
+      bought: false
     }
     ];
   });
